@@ -17,5 +17,9 @@
     <string name="unit_1">unit to convert</string>
     <string name="unit_2">unit converted</string>
 
+    <string name="convert_btn">Convert !</string>
+    <string name="des_btn" translatable="false">switch unit</string>
+
     <string name="blank" translatable="false">  </string>
+
 </resources>

@@ -22,6 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@color/orange_1"
             android:foreground="@drawable/home"
             android:text="@string/blank" />
 
@@ -30,6 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@color/orange_1"
             android:foreground="@drawable/euro"
             android:text="@string/blank" />
 
@@ -38,6 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@color/orange_1"
             android:foreground="@drawable/lenght"
             android:text="@string/blank" />
 
@@ -46,6 +49,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@color/orange_1"
             android:foreground="@drawable/mass"
             android:text="@string/blank" />
 
@@ -54,6 +58,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@color/orange_1"
             android:foreground="@drawable/speed"
             android:text="@string/blank" />
 
@@ -62,6 +67,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@color/orange_1"
             android:foreground="@drawable/tempe"
             android:text="@string/blank" />
 
@@ -83,14 +89,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ListView
-        android:id="@+id/list_convert"
+    <Spinner
+        android:id="@+id/list"
         android:layout_width="0dp"
-        android:layout_height="16dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginBottom="256dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="100dp"
         android:background="#C6C6C6C6"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_button"
         app:layout_constraintEnd_toEndOf="@+id/home_text"
         app:layout_constraintStart_toStartOf="@+id/home_text"
         app:layout_constraintTop_toBottomOf="@+id/home_text" />

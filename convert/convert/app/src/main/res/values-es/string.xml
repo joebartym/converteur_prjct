@@ -17,4 +17,6 @@
 
     <string name="unit_1">unidad a convertir</string>
     <string name="unit_2">unidad convertida</string>
+
+    <string name="convert_btn"> Convertir !</string>
 </resources>

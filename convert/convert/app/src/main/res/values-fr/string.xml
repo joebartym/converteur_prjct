@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">convert</string>
 
-    <string name="home_text">que voulez-vous convertir ?</string>
+    <string name="home_text">Que voulez-vous convertir ?</string>
 
     <string name="currency">Devise</string>
     <string name="length">Longueur</string>
@@ -17,4 +17,6 @@
 
     <string name="unit_1">unité à convertir</string>
     <string name="unit_2">unité convertie</string>
+
+    <string name="convert_btn">Convertir !</string>
 </resources>

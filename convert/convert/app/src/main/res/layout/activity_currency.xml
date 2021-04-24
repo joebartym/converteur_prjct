@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".convert_activities.Currency">
+
+  <LinearLayout
+      android:id="@+id/bottom_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@color/orange_1"
+      android:orientation="horizontal"
+      android:visibility="visible"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent">
+
+    <Button
+        android:id="@+id/home_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/orange_1"
+        android:foreground="@drawable/home"
+        android:text="@string/blank" />
+
+    <Button
+        android:id="@+id/curr_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/orange_1"
+        android:foreground="@drawable/euro"
+        android:text="@string/blank" />
+
+    <Button
+        android:id="@+id/leng_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/orange_1"
+        android:foreground="@drawable/lenght"
+        android:text="@string/blank" />
+
+    <Button
+        android:id="@+id/mass_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/orange_1"
+        android:foreground="@drawable/mass"
+        android:text="@string/blank" />
+
+    <Button
+        android:id="@+id/speed_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/orange_1"
+        android:foreground="@drawable/speed"
+        android:text="@string/blank" />
+
+    <Button
+        android:id="@+id/temp_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/orange_1"
+        android:foreground="@drawable/tempe"
+        android:text="@string/blank" />
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/layout_u1"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginLeft="32dp"
+      android:layout_marginTop="200dp"
+      android:layout_marginEnd="32dp"
+      android:layout_marginRight="32dp"
+      android:orientation="horizontal"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+    <EditText
+        android:id="@+id/text_unit_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:autofillHints=""
+        android:ems="10"
+        android:enabled="true"
+        android:hint="@string/unit_1"
+        android:inputType="numberSigned" />
+
+    <Spinner
+        android:id="@+id/currency_unit_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2" />
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/layout_u2"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginLeft="32dp"
+      android:layout_marginTop="150dp"
+      android:layout_marginEnd="32dp"
+      android:layout_marginRight="32dp"
+      android:layout_marginBottom="250dp"
+      android:layout_weight="1"
+      android:orientation="horizontal"
+      app:layout_constraintBottom_toTopOf="@+id/bottom_button"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/layout_u1">
+
+    <EditText
+        android:id="@+id/text_unit_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="@string/unit_2"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned" />
+
+    <Spinner
+        android:id="@+id/currency_unit_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2" />
+
+  </LinearLayout>
+
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+      android:id="@+id/invers_c"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="32dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginRight="16dp"
+      android:layout_marginBottom="32dp"
+      android:clickable="true"
+      android:contentDescription="@string/des_btn"
+      android:focusable="true"
+      android:focusableInTouchMode="true"
+      app:backgroundTint="@color/orange_0"
+      app:layout_constraintBottom_toTopOf="@+id/bottom_button"
+      app:layout_constraintEnd_toEndOf="@+id/layout_u2"
+      app:layout_constraintTop_toBottomOf="@+id/layout_u2"
+      app:srcCompat="@android:drawable/stat_notify_sync" />
+
+  <Button
+      android:id="@+id/conv_c_btn"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:layout_marginBottom="8dp"
+      android:text="@string/convert_btn"
+      app:layout_constraintBottom_toTopOf="@+id/layout_u2"
+      app:layout_constraintEnd_toEndOf="@+id/layout_u1"
+      app:layout_constraintTop_toBottomOf="@+id/layout_u1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
