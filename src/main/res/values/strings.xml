@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">convert</string>
+
+    <string name="home_text">CHOICE YOUR TOPIC</string>
+
+    <string name="currency">Currency</string>
+    <string name="length">Length</string>
+    <string name="mass">Mass</string>
+    <string name="speed">Speed</string>
+    <string name="temperature">Temperature</string>
+    <string name="angle">Angle</string>
+    <string name="time">Time</string>
+    <string name="volume">Volume</string>
+    <string name="energy">Energy</string>
+
+    <string name="unit_1">unit to convert</string>
+    <string name="unit_2">unit converted</string>
+
+    <string name="convert_btn">Convert !</string>
+    <string name="des_btn" translatable="false">switch unit</string>
+
+    <string name="blank" translatable="false">  </string>
+
+
+
+    <string-array name="Colorspinner">
+        <item>Garnet</item>
+        <item>Red</item>
+        <item>Blue</item>
+        <item>Yellow</item>
+        <item>White</item>
+        <item>Green</item>
+    </string-array>
+
+
+</resources>
