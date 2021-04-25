@@ -142,24 +142,6 @@
 
     </LinearLayout>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/invers_t"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="32dp"
-        android:clickable="true"
-        android:contentDescription="@string/des_btn"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        app:backgroundTint="@color/orange_0"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_button"
-        app:layout_constraintEnd_toEndOf="@+id/layout_u2"
-        app:layout_constraintTop_toBottomOf="@+id/layout_u2"
-        app:srcCompat="@android:drawable/stat_notify_sync" />
-
     <Button
         android:id="@+id/conv_t_btn"
         android:layout_width="wrap_content"
