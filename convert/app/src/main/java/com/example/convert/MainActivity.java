@@ -8,14 +8,18 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 
+import com.example.convert.convert_activities.Angle;
 import com.example.convert.convert_activities.Currency;
+import com.example.convert.convert_activities.Energy;
 import com.example.convert.convert_activities.Length;
 import com.example.convert.convert_activities.Mass;
 import com.example.convert.convert_activities.Speed;
 import com.example.convert.convert_activities.Temperature;
+import com.example.convert.convert_activities.Time;
+import com.example.convert.convert_activities.Volume;
 
 public class MainActivity extends AppCompatActivity {
-
+    Intent intente;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,18 +41,32 @@ public class MainActivity extends AppCompatActivity {
 
         listView.setOnItemClickListener((adapterView, view, position, rowId) -> {
             String theme = main_menu_list.getItem(position);
-          //  if
+        if(theme == angle ){
+                intente = new Intent(this, Angle.class);}
+        else if(theme == currency ){
+                intente = new Intent(this, Currency.class);}
+        else if(theme == energy ){
+            intente = new Intent(this, Energy.class);}
+        else if(theme == length ){
+            intente = new Intent(this, Length.class);}
+        else if(theme == mass ){
+            intente = new Intent(this, Mass.class);}
+        else if(theme == speed ){
+            intente = new Intent(this, Speed.class);}
+        else if(theme == temperature ){
+            intente = new Intent(this, Temperature.class);}
+        else if(theme == time ){
+            intente = new Intent(this, Time.class);}
+        else if(theme == volume ){
+            intente = new Intent(this, Volume.class);}
+
+            startActivity(intente);
         });
 
 
 
         // ALL BOTTOM BUTTON LINK
 
-        Button home_btn =findViewById(R.id.home_btn); // BUTTON HOME
-            home_btn.setOnClickListener((v)->{
-            Intent intent = new Intent(this,MainActivity.class);
-            startActivity(intent);
-        });
 
         Button money_btn = findViewById(R.id.curr_btn); // BUTTON CURRENCY ACTIVITY
             money_btn.setOnClickListener((v)->{
@@ -86,4 +104,5 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
 }

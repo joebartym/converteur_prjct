@@ -3,6 +3,7 @@
 
     <string name="home_text">CHOICE YOUR TOPIC</string>
 
+    /* theme   */
     <string name="currency">Currency</string>
     <string name="length">Length</string>
     <string name="mass">Mass</string>
@@ -12,7 +13,7 @@
     <string name="time">Time</string>
     <string name="volume">Volume</string>
     <string name="energy">Energy</string>
-
+/* -----*/
     <string name="unit_1">unit to convert</string>
     <string name="unit_2">unit converted</string>
 
@@ -21,16 +22,29 @@
 
     <string name="blank" translatable="false">  </string>
 
+/*angle */
 
 
-    <string-array name="Colorspinner">
-        <item>Garnet</item>
-        <item>Red</item>
-        <item>Blue</item>
-        <item>Yellow</item>
-        <item>White</item>
-        <item>Green</item>
+    <string name="angular_mil">angular mil</string>
+    <string name="radian">radian</string>
+    <string name="degree">degree</string>
+    <string name="turn">turn</string>
+    <string name="gradian">gradian</string>
+
+    <string name="smb_angular_mil" translatable="false">µ</string>
+    <string name="smb_radian" translatable="false">rad</string>
+    <string name="smb_degree" translatable="false">°</string>
+    <string name="smb_turn" translatable="false">tr</string>
+    <string name="smb_gradian" translatable="false">gr</string>
+
+
+
+    <string-array name="angle_spinner">
+        <item>angular mil</item>
+        <item>radian</item>
+        <item>degree</item>
+        <item>turn</item>
+        <item>gradian</item>
     </string-array>
-
 
 </resources>
