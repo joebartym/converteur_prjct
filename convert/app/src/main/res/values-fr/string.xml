@@ -35,4 +35,47 @@
         <item>turn</item>
         <item>gradian</item>
     </string-array>
+
+
+
+
+    /*energy*/
+
+    <string name="joule">joule</string>
+    <string name="kilojoule">kilojoule</string>
+    <string name="calorie">calorie</string>
+    <string name="Kilocalorie">Kilocalorie</string>
+    <string name="watt_heure">watt_heure</string>
+    <string name="kilowatt_heure">kilowatt_heure</string>
+    <string name="electronvolt">Tera electronvolt</string>
+
+
+    /* LENGTH*/
+
+    <string name="nanométre">nanométre</string>
+    <string name="micrométre">micrométre</string>
+    <string name="millimétre">millimétre</string>
+    <string name="centimétre">centimétre</string>
+    <string name="décimétre">décimétre</string>
+    <string name="métre">métre</string>
+    <string name="décamétre">décamétre</string>
+    <string name="hectométre">hectométre</string>
+    <string name="kilométre">kilométre</string>
+    <string name="miles">miles</string>
+    <string name="yard">yard</string>
+    <string name="pied">pied</string>
+    <string name="pouce">pouce</string>
+    <string name="mile_marin">mile_marin</string>
+
+
+    /* TIME */
+
+
+    <string name="minute">minute</string>
+    <string name="heure">heure</string>
+    <string name="jour">jour</string>
+    <string name="seconde">seconde</string>
+    <string name="annee">année</string>
+    <string name="microseconde">microseconde</string>
+
 </resources>

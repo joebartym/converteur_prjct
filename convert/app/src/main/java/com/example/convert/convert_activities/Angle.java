@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import com.example.convert.R;
 
@@ -40,6 +41,7 @@ public class Angle extends AppCompatActivity implements AdapterView.OnItemSelect
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.angle_spinner, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         angle_spn.setAdapter(adapter);
+        angle_spn.setOnItemSelectedListener(this);
         spinner_values = angular_mil;
 
 // BUTTON
@@ -138,7 +140,6 @@ public class Angle extends AppCompatActivity implements AdapterView.OnItemSelect
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         spinner_values = parent.getItemAtPosition(position).toString();
-        ;
     }
 
     @Override

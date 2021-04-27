@@ -47,4 +47,115 @@
         <item>gradian</item>
     </string-array>
 
+
+    /*energy*/
+
+    <string name="joule">joule</string>
+    <string name="kilojoule">kilojoule</string>
+    <string name="calorie">calorie</string>
+    <string name="Kilocalorie">Kilocalorie</string>
+    <string name="watt_heure">watt heure</string>
+    <string name="kilowatt_heure">kilowatt_heure</string>
+    <string name="electronvolt">Tera electronvolt</string>
+
+
+    <string name="smb_joule" translatable="false">J</string>
+    <string name="smb_kilojoule" translatable="false">kJ</string>
+    <string name="smb_calorie" translatable="false">C</string>
+    <string name="smb_Kilocalorie" translatable="false">kC</string>
+    <string name="smb_watt_heure" translatable="false">w/h</string>
+    <string name="smb_kilowatt_heure" translatable="false">kW/h</string>
+    <string name="smb_electronvolt" translatable="false">TeV</string>
+
+
+
+    <string-array name="ener_spinner">
+        <item>joule</item>
+        <item>kilojoule</item>
+        <item>calorie</item>
+        <item>Kilocalorie</item>
+        <item>watt_heure</item>
+        <item>kilowatt_heure</item>
+        <item>Tera electronvolt</item>
+    </string-array>
+
+
+    /* LENGTH*/
+
+    <string name="nanométre">nanométre</string>
+    <string name="micrométre">micrométre</string>
+    <string name="millimétre">millimétre</string>
+    <string name="centimétre">centimétre</string>
+    <string name="décimétre">décimétre</string>
+    <string name="métre">métre</string>
+    <string name="décamétre">décamétre</string>
+    <string name="hectométre">hectométre</string>
+    <string name="kilométre">kilométre</string>
+    <string name="miles">miles</string>
+    <string name="yard">yard</string>
+    <string name="pied">pied</string>
+    <string name="pouce">pouce</string>
+    <string name="mile_marin">mile_marin</string>
+
+
+
+    <string name="smb_nanométre" translatable="false">nm</string>
+    <string name="smb_micrométre" translatable="false">µm</string>
+    <string name="smb_millimétre" translatable="false">mm</string>
+    <string name="smb_centimétre" translatable="false">cm</string>
+    <string name="smb_décimétre" translatable="false">dm</string>
+    <string name="smb_métre" translatable="false">m</string>
+    <string name="smb_décamétre" translatable="false">dam</string>
+    <string name="smb_hectométre" translatable="false">hm</string>
+    <string name="smb_kilométre" translatable="false">km</string>
+    <string name="smb_miles" translatable="false">mi</string>
+    <string name="smb_yard" translatable="false">yd</string>
+    <string name="smb_pied" translatable="false">\'</string>
+    <string name="smb_pouce" translatable="false">"</string>
+    <string name="smb_mile_marin" translatable="false">NM</string>
+
+
+
+    <string-array name="length_spinner">
+        <item>joule</item>
+        <item>kilojoule</item>
+        <item>calorie</item>
+        <item>Kilocalorie</item>
+        <item>watt_heure</item>
+        <item>kilowatt_heure</item>
+        <item>tera electronvolt</item>
+    </string-array>
+
+/* TIME */
+
+
+    <string name="minute">minute</string>
+    <string name="heure">heure</string>
+    <string name="jour">jour</string>
+    <string name="seconde">seconde</string>
+    <string name="annee">année</string>
+    <string name="microseconde">microseconde</string>
+
+
+    <string name="smb_minute" translatable="false">m</string>
+    <string name="smb_heure" translatable="false">h</string>
+    <string name="smb_jour" translatable="false">j</string>
+    <string name="smb_seconde" translatable="false">s</string>
+    <string name="smb_annee" translatable="false"> </string>
+    <string name="smb_microseconde" translatable="false">µs</string>
+
+
+
+    <string-array name="time_spinner">
+        <item>minute</item>
+        <item>heure</item>
+        <item>jour</item>
+        <item>seconde</item>
+        <item>année</item>
+        <item>>microseconde</item>
+    </string-array>
+
+    /*VOLUME */
+
+
 </resources>
