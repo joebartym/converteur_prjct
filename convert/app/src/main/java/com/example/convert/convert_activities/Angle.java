@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.sax.TextElementListener;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -34,27 +35,30 @@ public class Angle extends AppCompatActivity implements AdapterView.OnItemSelect
 
 
 
-
+ // SPINNER
         Spinner angle_spn = findViewById(R.id.angle_unit_1);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.angle_spinner, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         angle_spn.setAdapter(adapter);
         spinner_values = angular_mil;
 
-        EditText nb_to_convert = findViewById(R.id.angle_input);
+// BUTTON
 
+        EditText nb_to_convert = findViewById(R.id.angle_input);
 
         Button convert_btn = findViewById(R.id.conv_a_btn);
         convert_btn.setOnClickListener((v) -> {
             Double my_unit = 0.0;
-            String tmp_radian,tmp_degree,tmp_gradian,tmp_turn,tmp_angular_mil;
-            Double tmp_nb = Double.parseDouble(nb_to_convert.toString());
-
+            String tmp_radian,tmp_degree,tmp_gradian,tmp_turn,tmp_angular_mil; Double tmp_nb;
+            try {
+                tmp_nb = Double.parseDouble(nb_to_convert.getText().toString());
+            }catch (Exception e){
+                tmp_nb = 0.0;
+            }
 
 
             Double pi  = Math.PI;
             // first step, all convert to one unit : the turn
-
             if (spinner_values.equals(getString(R.string.radian))){
                 my_unit = tmp_nb /(2 * pi);
             }else if (spinner_values.equals( getString(R.string.gradian))){
@@ -66,10 +70,9 @@ public class Angle extends AppCompatActivity implements AdapterView.OnItemSelect
             }else if (spinner_values.equals(getString(R.string.turn))){
                 my_unit = tmp_nb;
             }
-            my_unit = my_unit %1; // because an angle is periodique
+            my_unit = my_unit %1; // because an angle is periodic
 
             //second step : translation of all unit create all element
-
             tmp_radian = elem.getElem(my_unit * 2 * pi,getString(R.string.radian),getString(R.string.smb_radian));
             tmp_gradian = elem.getElem(my_unit * 400,getString(R.string.gradian),getString(R.string.smb_gradian));
             tmp_degree = elem.getElem(my_unit * 360,getString(R.string.degree),getString(R.string.smb_degree));
@@ -135,6 +138,7 @@ public class Angle extends AppCompatActivity implements AdapterView.OnItemSelect
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         spinner_values = parent.getItemAtPosition(position).toString();
+        ;
     }
 
     @Override

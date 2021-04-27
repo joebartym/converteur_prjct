@@ -10,12 +10,14 @@
         android:id="@+id/bottom_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="378dp"
         android:background="@color/orange_1"
         android:orientation="horizontal"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/list_angle">
 
         <Button
             android:id="@+id/home_btn"
@@ -89,14 +91,14 @@
 
         <EditText
             android:id="@+id/angle_input"
-            android:layout_width="match_parent"
+            android:layout_width="262dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:autofillHints=""
             android:ems="10"
             android:enabled="true"
             android:hint="@string/unit_1"
-            android:inputType="numberSigned" />
+            android:inputType="numberDecimal" />
 
         <Spinner
             android:id="@+id/angle_unit_1"
@@ -128,15 +130,16 @@
     <ListView
         android:id="@+id/list_angle"
         android:layout_width="0dp"
-        android:layout_height="249dp"
+        android:layout_height="0dp"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="80dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_button"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/conv_a_btn" />
+        app:layout_constraintTop_toBottomOf="@+id/layout_u1" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

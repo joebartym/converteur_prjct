@@ -9,7 +9,7 @@ public class Z_elem_list_creator {
 
     String getElem(double value,String unite, String symbol){ // this class is just to have a fonction where we want
         String elem = "";
-        String.format(elem,"%s :    %f  %s",unite,value,symbol);
+        elem = String.format("%s :    %f  %s",unite,value,symbol);
         return elem;
     }
 }
