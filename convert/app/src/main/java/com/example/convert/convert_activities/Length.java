@@ -3,6 +3,7 @@ package com.example.convert.convert_activities;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -58,9 +59,16 @@ public class Length extends AppCompatActivity implements AdapterView.OnItemSelec
 // BUTTON
 
         EditText nb_to_convert = findViewById(R.id.length_input);
+        SharedPreferences preferences = getPreferences(MODE_PRIVATE);
+        nb_to_convert.setText(preferences.getString("PREF_TEMP_INPUTl", nb_to_convert.getText().toString()));
 
         Button convert_btn = findViewById(R.id.conv_length_btn);
         convert_btn.setOnClickListener((v) -> {
+
+            getPreferences(MODE_PRIVATE)
+                    .edit()
+                    .putString("PREF_TEMP_INPUTl", nb_to_convert.getText().toString())
+                    .apply();
             Double my_unit = 0.0;
             String tmp_nanométre,tmp_micrométre,tmp_millimétre,tmp_centimétre,tmp_décimétre,tmp_métre,tmp_décamétre,tmp_hectométre,tmp_kilométre,tmp_miles,tmp_yard,tmp_pied,tmp_pouce,tmp_mile_marin;
             Double tmp_nb;

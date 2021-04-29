@@ -3,6 +3,7 @@ package com.example.convert.convert_activities;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -47,9 +48,16 @@ public class Speed extends AppCompatActivity implements AdapterView.OnItemSelect
 // BUTTON
 
         EditText nb_to_convert = findViewById(R.id.speed_input);
+        SharedPreferences preferences = getPreferences(MODE_PRIVATE);
+        nb_to_convert.setText(preferences.getString("PREF_TEMP_INPUTs", nb_to_convert.getText().toString()));
 
         Button convert_btn = findViewById(R.id.conv_speed_btn);
         convert_btn.setOnClickListener((v) -> {
+
+            getPreferences(MODE_PRIVATE)
+                    .edit()
+                    .putString("PREF_TEMP_INPUTs", nb_to_convert.getText().toString())
+                    .apply();
             Double my_unit = 0.0;
             String tmp_metre_seconde,tmp_kilometre_heur,tmp_miles_heur,tmp_noeud;
             Double tmp_nb;

@@ -3,6 +3,7 @@ package com.example.convert.convert_activities;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -50,9 +51,16 @@ public class Time extends AppCompatActivity implements AdapterView.OnItemSelecte
 // BUTTON
 
         EditText nb_to_convert = findViewById(R.id.time_input);
+        SharedPreferences preferences = getPreferences(MODE_PRIVATE);
+        nb_to_convert.setText(preferences.getString("PREF_TEMP_INPUTti", nb_to_convert.getText().toString()));
 
         Button convert_btn = findViewById(R.id.conv_time_btn);
         convert_btn.setOnClickListener((v) -> {
+
+            getPreferences(MODE_PRIVATE)
+                    .edit()
+                    .putString("PREF_TEMP_INPUTti", nb_to_convert.getText().toString())
+                    .apply();
             Double my_unit = 0.0;
             String tmp_seconde,tmp_heure,tmp_minute,tmp_annee,tmp_jour,tmp_miliseconde,tmp_all;
             Double tmp_nb;

@@ -3,6 +3,7 @@ package com.example.convert.convert_activities;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -45,9 +46,16 @@ public class Angle extends AppCompatActivity implements AdapterView.OnItemSelect
 // BUTTON
 
         EditText nb_to_convert = findViewById(R.id.angle_input);
+        SharedPreferences preferences = getPreferences(MODE_PRIVATE);
+        nb_to_convert.setText(preferences.getString("PREF_TEMP_INPUTa", nb_to_convert.getText().toString()));
 
         Button convert_btn = findViewById(R.id.conv_a_btn);
         convert_btn.setOnClickListener((v) -> {
+
+            getPreferences(MODE_PRIVATE)
+                    .edit()
+                    .putString("PREF_TEMP_INPUTa", nb_to_convert.getText().toString())
+                    .apply();
             Double my_unit = 0.0;
             String tmp_radian,tmp_degree,tmp_gradian,tmp_turn,tmp_angular_mil; Double tmp_nb;
             try {

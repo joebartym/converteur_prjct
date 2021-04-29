@@ -3,6 +3,7 @@ package com.example.convert.convert_activities;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -50,9 +51,16 @@ public class Mass extends AppCompatActivity implements AdapterView.OnItemSelecte
 // BUTTON
 
         EditText nb_to_convert = findViewById(R.id.mass_input);
+        SharedPreferences preferences = getPreferences(MODE_PRIVATE);
+        nb_to_convert.setText(preferences.getString("PREF_TEMP_INPUTm", nb_to_convert.getText().toString()));
 
         Button convert_btn = findViewById(R.id.conv_mass_btn);
         convert_btn.setOnClickListener((v) -> {
+
+            getPreferences(MODE_PRIVATE)
+                    .edit()
+                    .putString("PREF_TEMP_INPUTm", nb_to_convert.getText().toString())
+                    .apply();
             Double my_unit = 0.0;
             String tmp_tone, tmp_kilogramme, tmp_livre, tmp_once,tmp_gramme,tmp_miligramme;
             Double tmp_nb;

@@ -3,6 +3,7 @@ package com.example.convert.convert_activities;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -48,9 +49,16 @@ public class Energy extends AppCompatActivity implements AdapterView.OnItemSelec
 // BUTTON
 
         EditText nb_to_convert = findViewById(R.id.ener_input);
+        SharedPreferences preferences = getPreferences(MODE_PRIVATE);
+        nb_to_convert.setText(preferences.getString("PREF_TEMP_INPUTe", nb_to_convert.getText().toString()));
 
         Button convert_btn = findViewById(R.id.conv_ener_btn);
         convert_btn.setOnClickListener((v) -> {
+
+            getPreferences(MODE_PRIVATE)
+                    .edit()
+                    .putString("PREF_TEMP_INPUTe", nb_to_convert.getText().toString())
+                    .apply();
             Double my_unit = 0.0;
             String tmp_kilojoule,tmp_joule,tmp_electronvolt,tmp_calorie,tmp_kilocalorie,tmp_kilowatt_heure,tmp_watt_heure; Double tmp_nb;
             try {

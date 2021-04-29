@@ -3,6 +3,7 @@ package com.example.convert.convert_activities;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -48,9 +49,15 @@ public class Volume extends AppCompatActivity implements AdapterView.OnItemSelec
 // BUTTON
 
         EditText nb_to_convert = findViewById(R.id.volume_input);
-
+        SharedPreferences preferences = getPreferences(MODE_PRIVATE);
+        nb_to_convert.setText(preferences.getString("PREF_TEMP_INPUTv", nb_to_convert.getText().toString()));
         Button convert_btn = findViewById(R.id.conv_vol_btn);
         convert_btn.setOnClickListener((v) -> {
+
+            getPreferences(MODE_PRIVATE)
+                    .edit()
+                    .putString("PREF_TEMP_INPUTv", nb_to_convert.getText().toString())
+                    .apply();
             Double my_unit = 0.0;
             String tmp_litre,tmp_once_liquide_usa,tmp_once_liquide_uk,tmp_pinte,tmp_metre_cube;
             Double tmp_nb;
@@ -144,6 +151,7 @@ public class Volume extends AppCompatActivity implements AdapterView.OnItemSelec
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         spinner_values = parent.getItemAtPosition(position).toString();
+
     }
 
     @Override
