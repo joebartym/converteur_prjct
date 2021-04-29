@@ -3,13 +3,13 @@ package com.example.convert;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 
 import com.example.convert.convert_activities.Angle;
-import com.example.convert.convert_activities.Currency;
 import com.example.convert.convert_activities.Energy;
 import com.example.convert.convert_activities.Length;
 import com.example.convert.convert_activities.Mass;
@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         String temperature = getString(R.string.temperature);
         String time = getString(R.string.time);
         String volume = getString(R.string.volume);
+        String url = "https://www.boursorama.com/bourse/devises/convertisseur-devises/";
         main_menu_list.addAll(angle,currency,energy,length,mass,speed,temperature,time,volume);
         ListView listView = findViewById(R.id.list_theme_mainmenu);
         listView.setAdapter(main_menu_list);
@@ -44,7 +45,8 @@ public class MainActivity extends AppCompatActivity {
         if(theme == angle ){
                 intente = new Intent(this, Angle.class);}
         else if(theme == currency ){
-                intente = new Intent(this, Currency.class);}
+                intente = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                this.startActivity(intente);}
         else if(theme == energy ){
             intente = new Intent(this, Energy.class);}
         else if(theme == length ){
@@ -68,9 +70,9 @@ public class MainActivity extends AppCompatActivity {
         // ALL BOTTOM BUTTON LINK
 
 
-        Button money_btn = findViewById(R.id.curr_btn); // BUTTON CURRENCY ACTIVITY
-            money_btn.setOnClickListener((v)->{
-            Intent intent = new Intent(this, Currency.class);
+        Button time_btn = findViewById(R.id.time_btn); // BUTTON TIME ACTIVITY
+            time_btn.setOnClickListener((v)->{
+            Intent intent = new Intent(this, Time.class);
             startActivity(intent);
         });
 

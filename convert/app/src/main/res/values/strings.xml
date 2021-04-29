@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">convert</string>
 
-    <string name="home_text">CHOICE YOUR TOPIC</string>
+    <string name="home_text">What do you want to convert ?</string>
 
     /* theme   */
     <string name="currency">Currency</string>
@@ -53,9 +53,9 @@
     <string name="joule">joule</string>
     <string name="kilojoule">kilojoule</string>
     <string name="calorie">calorie</string>
-    <string name="Kilocalorie">Kilocalorie</string>
-    <string name="watt_heure">watt heure</string>
-    <string name="kilowatt_heure">kilowatt_heure</string>
+    <string name="Kilocalorie">kilocalorie</string>
+    <string name="watt_heure">watt-hour</string>
+    <string name="kilowatt_heure">kilowatt-hour</string>
     <string name="electronvolt">Tera electronvolt</string>
 
 
@@ -82,20 +82,20 @@
 
     /* LENGTH*/
 
-    <string name="nanométre">nanomètre</string>
-    <string name="micrométre">micromètre</string>
-    <string name="millimétre">milimètre</string>
-    <string name="centimétre">centimètre</string>
-    <string name="décimétre">décimètre</string>
-    <string name="métre">mètre</string>
-    <string name="décamétre">décamètre</string>
-    <string name="hectométre">hectomètre</string>
-    <string name="kilométre">kilomètre</string>
-    <string name="miles">miles</string>
+    <string name="nanométre">nanometer</string>
+    <string name="micrométre">micrometer</string>
+    <string name="millimétre">millimeter</string>
+    <string name="centimétre">centimeter</string>
+    <string name="décimétre">decimeter</string>
+    <string name="métre">meter</string>
+    <string name="décamétre">décameter</string>
+    <string name="hectométre">hectometer</string>
+    <string name="kilométre">kilometer</string>
+    <string name="miles">mile</string>
     <string name="yard">yard</string>
-    <string name="pied">pied</string>
-    <string name="pouce">pouce</string>
-    <string name="mile_marin">mile_marin</string>
+    <string name="pied">feet</string>
+    <string name="pouce">inch</string>
+    <string name="mile_marin">nautical mile</string>
 
 
 
@@ -137,11 +137,11 @@
 
 
     <string name="minute">minute</string>
-    <string name="heure">heure</string>
-    <string name="jour">jour</string>
-    <string name="seconde">seconde</string>
-    <string name="annee">année</string>
-    <string name="miliseconde">miliseconde</string>
+    <string name="heure">hour</string>
+    <string name="jour">day</string>
+    <string name="seconde">second</string>
+    <string name="annee">year</string>
+    <string name="miliseconde">millisecond</string>
 
 
     <string name="smb_minute" translatable="false">m</string>
@@ -165,10 +165,10 @@
     /*VOLUME */
 
     <string name="litre">litre</string>
-    <string name="once_liquide_uk">once_liquide_uk</string>
-    <string name="once_liquide_usa">jour</string>
-    <string name="pinte">pinte</string>
-    <string name="metre_cube">metre_cube</string>
+    <string name="once_liquide_uk">fluid once (uk)</string>
+    <string name="once_liquide_usa">fluid once (usa)</string>
+    <string name="pinte">pint</string>
+    <string name="metre_cube">cubic meter</string>
 
 
     <string name="smb_litre" translatable="false">l</string>
@@ -191,12 +191,12 @@
 
 
 
-    <string name="tone">tone</string>
+    <string name="tone">tonne</string>
     <string name="kilogramme">kilogramme</string>
-    <string name="livre">livre</string>
+    <string name="livre">pound</string>
     <string name="once">once</string>
     <string name="gramme">gramme</string>
-    <string name="miligramme">miligramme</string>
+    <string name="miligramme">milligramme</string>
 
 
     <string name="smb_tone" translatable="false">T</string>
@@ -244,10 +244,10 @@
 
 
 
-    <string name="metre_seconde">metre_seconde</string>
-    <string name="kilometre_heur">kilometre_heur</string>
-    <string name="miles_heur">miles_heur</string>
-    <string name="noeud">noeud</string>
+    <string name="metre_seconde">meter per second</string>
+    <string name="kilometre_heur">kilometer per hour</string>
+    <string name="miles_heur">miles per hour</string>
+    <string name="noeud">knot</string>
 
 
     <string name="smb_metre_seconde" translatable="false">m/s</string>

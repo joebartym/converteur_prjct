@@ -12,7 +12,6 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Spinner;
 
-import com.example.convert.MainActivity;
 import com.example.convert.R;
 
 public class Time extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
@@ -105,9 +104,9 @@ public class Time extends AppCompatActivity implements AdapterView.OnItemSelecte
             this.finish();
         });
 
-        Button money_btn = findViewById(R.id.curr_btn); // BUTTON CURRENCY ACTIVITY
-        money_btn.setOnClickListener((v)->{
-            Intent intent = new Intent(this, Currency.class);
+        Button time_btn = findViewById(R.id.time_btn); // BUTTON TIME ACTIVITY
+        time_btn.setOnClickListener((v)->{
+            Intent intent = new Intent(this, Time.class);
             this.finish();
             startActivity(intent);
         });

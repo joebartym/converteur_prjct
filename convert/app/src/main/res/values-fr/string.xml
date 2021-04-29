@@ -23,11 +23,11 @@
 
 
     /*angle */
-    <string name="angular_mil">angular mil</string>
+    <string name="angular_mil">mil angulaire</string>
     <string name="radian">radian</string>
-    <string name="degree">degree</string>
-    <string name="turn">turn</string>
-    <string name="gradian">gradian</string>
+    <string name="degree">degré</string>
+    <string name="turn">tour</string>
+    <string name="gradian">grade</string>
     <string-array name="angle_spinner">
         <item>angular mil</item>
         <item>radian</item>
@@ -44,10 +44,10 @@
     <string name="joule">joule</string>
     <string name="kilojoule">kilojoule</string>
     <string name="calorie">calorie</string>
-    <string name="Kilocalorie">Kilocalorie</string>
-    <string name="watt_heure">watt_heure</string>
-    <string name="kilowatt_heure">kilowatt_heure</string>
-    <string name="electronvolt">Tera electronvolt</string>
+    <string name="Kilocalorie">kilocalorie</string>
+    <string name="watt_heure">watt-heure</string>
+    <string name="kilowatt_heure">kilowatt-heure</string>
+    <string name="electronvolt">Tera électronvolt</string>
 
 
     <string-array name="ener_spinner">
@@ -71,11 +71,11 @@
     <string name="décamétre">décamètre</string>
     <string name="hectométre">hectomètre</string>
     <string name="kilométre">kilomètre</string>
-    <string name="miles">miles</string>
+    <string name="miles">mile</string>
     <string name="yard">yard</string>
     <string name="pied">pied</string>
     <string name="pouce">pouce</string>
-    <string name="mile_marin">mile_marin</string>
+    <string name="mile_marin">mile marin</string>
 
 
     <string-array name="length_spinner">
@@ -119,10 +119,10 @@
 /* VOLUME */
 
     <string name="litre">litre</string>
-    <string name="once_liquide_uk">once_liquide_uk</string>
-    <string name="once_liquide_usa">jour</string>
+    <string name="once_liquide_uk">once liquide (uk)</string>
+    <string name="once_liquide_usa">once liquide (usa)</string>
     <string name="pinte">pinte</string>
-    <string name="metre_cube">metre_cube</string>
+    <string name="metre_cube">mètre cube</string>
 
 
     <string-array name="volume_spinner">
@@ -138,7 +138,7 @@
 
 
 
-    <string name="tone">tone</string>
+    <string name="tone">tonne</string>
     <string name="kilogramme">kilogramme</string>
     <string name="livre">livre</string>
     <string name="once">once</string>
@@ -177,9 +177,9 @@
 
 
 
-    <string name="metre_seconde">metre_seconde</string>
-    <string name="kilometre_heur">kilometre_heur</string>
-    <string name="miles_heur">miles_heur</string>
+    <string name="metre_seconde">mètre par seconde</string>
+    <string name="kilometre_heur">kilomètre par heure</string>
+    <string name="miles_heur">miles par heure</string>
     <string name="noeud">noeud</string>
 
 
