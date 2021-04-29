@@ -11,7 +11,7 @@
     <string name="speed">Vitesse</string>
     <string name="temperature">Température</string>
     <string name="angle">Angle</string>
-    <string name="time">Temp</string>
+    <string name="time">Temps</string>
     <string name="volume">Volume</string>
     <string name="energy">Énergie</string>
 
@@ -50,22 +50,50 @@
     <string name="electronvolt">Tera electronvolt</string>
 
 
+    <string-array name="ener_spinner">
+        <item>joule</item>
+        <item>kilojoule</item>
+        <item>calorie</item>
+        <item>Kilocalorie</item>
+        <item>watt_heure</item>
+        <item>kilowatt_heure</item>
+        <item>Tera electronvolt</item>
+    </string-array>
+
     /* LENGTH*/
 
-    <string name="nanométre">nanométre</string>
-    <string name="micrométre">micrométre</string>
-    <string name="millimétre">millimétre</string>
-    <string name="centimétre">centimétre</string>
-    <string name="décimétre">décimétre</string>
-    <string name="métre">métre</string>
-    <string name="décamétre">décamétre</string>
-    <string name="hectométre">hectométre</string>
-    <string name="kilométre">kilométre</string>
+    <string name="nanométre">nanomètre</string>
+    <string name="micrométre">micromètre</string>
+    <string name="millimétre">milimètre</string>
+    <string name="centimétre">centimètre</string>
+    <string name="décimétre">décimètre</string>
+    <string name="métre">mètre</string>
+    <string name="décamétre">décamètre</string>
+    <string name="hectométre">hectomètre</string>
+    <string name="kilométre">kilomètre</string>
     <string name="miles">miles</string>
     <string name="yard">yard</string>
     <string name="pied">pied</string>
     <string name="pouce">pouce</string>
     <string name="mile_marin">mile_marin</string>
+
+
+    <string-array name="length_spinner">
+        <item>mètre</item>
+        <item>nanomètre</item>
+        <item>micromètre</item>
+        <item>milimètre</item>
+        <item>centimètre</item>
+        <item>décimètre</item>
+        <item>décamètre</item>
+        <item>hectomètre</item>
+        <item>kilomètre</item>
+        <item>miles</item>
+        <item>yard</item>
+        <item>pied</item>
+        <item>pouce</item>
+        <item>mile_marin</item>
+    </string-array>
 
 
     /* TIME */
@@ -77,5 +105,89 @@
     <string name="seconde">seconde</string>
     <string name="annee">année</string>
     <string name="microseconde">microseconde</string>
+
+
+    <string-array name="time_spinner">
+        <item>minute</item>
+        <item>heure</item>
+        <item>jour</item>
+        <item>seconde</item>
+        <item>année</item>
+        <item>microseconde</item>
+    </string-array>
+
+/* VOLUME */
+
+    <string name="litre">litre</string>
+    <string name="once_liquide_uk">once_liquide_uk</string>
+    <string name="once_liquide_usa">jour</string>
+    <string name="pinte">pinte</string>
+    <string name="metre_cube">metre_cube</string>
+
+
+    <string-array name="volume_spinner">
+        <item>litre</item>
+        <item>once_liquide_uk</item>
+        <item>once_liquide_usa</item>
+        <item>pinte</item>
+        <item>metre_cube</item>
+    </string-array>
+
+
+    /* MASS */
+
+
+
+    <string name="tone">tone</string>
+    <string name="kilogramme">kilogramme</string>
+    <string name="livre">livre</string>
+    <string name="once">once</string>
+    <string name="gramme">gramme</string>
+    <string name="miligramme">miligramme</string>
+
+
+    <string-array name="mass_spinner">
+        <item>kilogramme</item>
+        <item>tone</item>
+        <item>livre</item>
+        <item>once</item>
+        <item>gramme</item>
+        <item>miligramme</item>
+    </string-array>
+
+
+
+
+    /* TEMPERATURE */
+
+
+    <string name="fahrenheit">fahrenheit</string>
+    <string name="celsius">celsius</string>
+    <string name="kelvin">kelvin</string>
+
+
+
+    <string-array name="temp_spinner">
+        <item>fahrenheit</item>
+        <item>celsius</item>
+        <item>kelvin</item>
+    </string-array>
+
+    /* SPEED */
+
+
+
+    <string name="metre_seconde">metre_seconde</string>
+    <string name="kilometre_heur">kilometre_heur</string>
+    <string name="miles_heur">miles_heur</string>
+    <string name="noeud">noeud</string>
+
+
+    <string-array name="speed_spinner">
+        <item>kilometre_heur</item>
+        <item>metre_seconde</item>
+        <item>miles_heur</item>
+        <item>noeud</item>
+    </string-array>
 
 </resources>

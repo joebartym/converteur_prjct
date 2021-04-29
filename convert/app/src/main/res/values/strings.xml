@@ -82,15 +82,15 @@
 
     /* LENGTH*/
 
-    <string name="nanométre">nanométre</string>
-    <string name="micrométre">micrométre</string>
-    <string name="millimétre">millimétre</string>
-    <string name="centimétre">centimétre</string>
-    <string name="décimétre">décimétre</string>
-    <string name="métre">métre</string>
-    <string name="décamétre">décamétre</string>
-    <string name="hectométre">hectométre</string>
-    <string name="kilométre">kilométre</string>
+    <string name="nanométre">nanomètre</string>
+    <string name="micrométre">micromètre</string>
+    <string name="millimétre">milimètre</string>
+    <string name="centimétre">centimètre</string>
+    <string name="décimétre">décimètre</string>
+    <string name="métre">mètre</string>
+    <string name="décamétre">décamètre</string>
+    <string name="hectométre">hectomètre</string>
+    <string name="kilométre">kilomètre</string>
     <string name="miles">miles</string>
     <string name="yard">yard</string>
     <string name="pied">pied</string>
@@ -117,13 +117,20 @@
 
 
     <string-array name="length_spinner">
-        <item>joule</item>
-        <item>kilojoule</item>
-        <item>calorie</item>
-        <item>Kilocalorie</item>
-        <item>watt_heure</item>
-        <item>kilowatt_heure</item>
-        <item>tera electronvolt</item>
+        <item>mètre</item>
+        <item>nanomètre</item>
+        <item>micromètre</item>
+        <item>milimètre</item>
+        <item>centimètre</item>
+        <item>décimètre</item>
+        <item>décamètre</item>
+        <item>hectomètre</item>
+        <item>kilomètre</item>
+        <item>miles</item>
+        <item>yard</item>
+        <item>pied</item>
+        <item>pouce</item>
+        <item>mile_marin</item>
     </string-array>
 
 /* TIME */
@@ -152,10 +159,111 @@
         <item>jour</item>
         <item>seconde</item>
         <item>année</item>
-        <item>>microseconde</item>
+        <item>microseconde</item>
     </string-array>
 
     /*VOLUME */
+
+    <string name="litre">litre</string>
+    <string name="once_liquide_uk">once_liquide_uk</string>
+    <string name="once_liquide_usa">jour</string>
+    <string name="pinte">pinte</string>
+    <string name="metre_cube">metre_cube</string>
+
+
+    <string name="smb_litre" translatable="false">l</string>
+    <string name="smb_once_liquide_uk" translatable="false">fl oz uk</string>
+    <string name="smb_once_liquide_usa" translatable="false">fl oz usa</string>
+    <string name="smb_pinte" translatable="false">pt</string>
+    <string name="smb_metre_cube" translatable="false">m3</string>
+
+
+
+    <string-array name="volume_spinner">
+        <item>litre</item>
+        <item>once_liquide_uk</item>
+        <item>once_liquide_usa</item>
+        <item>pinte</item>
+        <item>metre_cube</item>
+    </string-array>
+
+     /* MASS */
+
+
+
+    <string name="tone">tone</string>
+    <string name="kilogramme">kilogramme</string>
+    <string name="livre">livre</string>
+    <string name="once">once</string>
+    <string name="gramme">gramme</string>
+    <string name="miligramme">miligramme</string>
+
+
+    <string name="smb_tone" translatable="false">T</string>
+    <string name="smb_kilogramme" translatable="false">kg</string>
+    <string name="smb_livre" translatable="false">lb</string>
+    <string name="smb_once" translatable="false">oz</string>
+    <string name="smb_gramme" translatable="false">g</string>
+    <string name="smb_miligramme" translatable="false">mg</string>
+
+
+
+    <string-array name="mass_spinner">
+        <item>kilogramme</item>
+        <item>tone</item>
+        <item>livre</item>
+        <item>once</item>
+        <item>gramme</item>
+        <item>miligramme</item>
+    </string-array>
+
+
+
+
+    /* TEMPERATURE */
+
+
+    <string name="fahrenheit">fahrenheit</string>
+    <string name="celsius">celsius</string>
+    <string name="kelvin">kelvin</string>
+
+
+    <string name="smb_fahrenheit" translatable="false">°F</string>
+    <string name="smb_celsius" translatable="false">°C</string>
+    <string name="smb_kelvin" translatable="false">°K</string>
+
+
+
+    <string-array name="temp_spinner">
+        <item>fahrenheit</item>
+        <item>celsius</item>
+        <item>kelvin</item>
+    </string-array>
+
+    /* SPEED */
+
+
+
+    <string name="metre_seconde">metre_seconde</string>
+    <string name="kilometre_heur">kilometre_heur</string>
+    <string name="miles_heur">miles_heur</string>
+    <string name="noeud">noeud</string>
+
+
+    <string name="smb_metre_seconde" translatable="false">m/s</string>
+    <string name="smb_kilometre_heur" translatable="false">km/s</string>
+    <string name="smb_miles_heur" translatable="false">mph</string>
+    <string name="smb_noeud" translatable="false">nd</string>
+
+
+
+    <string-array name="speed_spinner">
+        <item>kilometre_heur</item>
+        <item>metre_seconde</item>
+        <item>miles_heur</item>
+        <item>noeud</item>
+    </string-array>
+
 
 
 </resources>

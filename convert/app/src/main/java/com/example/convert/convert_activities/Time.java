@@ -4,13 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 
 import com.example.convert.MainActivity;
 import com.example.convert.R;
 
-public class Time extends AppCompatActivity {
-
+public class Time extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
+    String spinner_values;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,5 +63,15 @@ public class Time extends AppCompatActivity {
             this.finish();
             startActivity(intent);
         });
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        spinner_values = parent.getItemAtPosition(position).toString();
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
+
     }
 }

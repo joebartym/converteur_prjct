@@ -98,7 +98,7 @@
             android:ems="10"
             android:enabled="true"
             android:hint="@string/unit_1"
-            android:inputType="numberDecimal" />
+            android:inputType="numberSigned|numberDecimal" />
 
         <Spinner
             android:id="@+id/angle_unit_1"
