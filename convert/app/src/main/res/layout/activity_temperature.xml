@@ -6,6 +6,22 @@
     android:layout_height="match_parent"
     tools:context=".convert_activities.Temperature">
 
+    <View
+        android:id="@+id/fond_gauche7"
+        android:layout_width="213dp"
+        android:layout_height="242dp"
+        android:foreground="@drawable/fond_gauche"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/fond_droite7"
+        android:layout_width="201dp"
+        android:layout_height="240dp"
+        android:foreground="@drawable/fond_droite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ListView
         android:id="@+id/list_temp"
         android:layout_width="0dp"
@@ -118,7 +134,8 @@
             android:layout_weight="1"
             android:background="@color/orange_1"
             android:foreground="@drawable/tempe"
-            android:text="@string/blank" />
+            android:text="@string/blank"
+            app:backgroundTint="@color/orange_3" />
 
     </LinearLayout>
 

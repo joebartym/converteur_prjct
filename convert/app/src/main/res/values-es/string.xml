@@ -52,11 +52,11 @@
     <string-array name="ener_spinner">
         <item>joule</item>
         <item>kilojoule</item>
-        <item>calorie</item>
-        <item>Kilocalorie</item>
-        <item>watt_heure</item>
-        <item>kilowatt_heure</item>
-        <item>Tera electronvolt</item>
+        <item>caloría</item>
+        <item>kilocaloría</item>
+        <item>vatio-hora</item>
+        <item>kilovatio-hora</item>
+        <item>Tera electronvoltio</item>
     </string-array>
 
 
@@ -79,20 +79,20 @@
 
 
     <string-array name="length_spinner">
-        <item>mètre</item>
-        <item>nanomètre</item>
-        <item>micromètre</item>
-        <item>milimètre</item>
-        <item>centimètre</item>
-        <item>décimètre</item>
-        <item>décamètre</item>
-        <item>hectomètre</item>
-        <item>kilomètre</item>
-        <item>miles</item>
-        <item>yard</item>
-        <item>pied</item>
-        <item>pouce</item>
-        <item>mile_marin</item>
+        <item>metro</item>
+        <item>nanómetro</item>
+        <item>micrómetro</item>
+        <item>milímetro</item>
+        <item>centímetro</item>
+        <item>decímetro</item>
+        <item>decámetro</item>
+        <item>hectómetro</item>
+        <item>kilómetro</item>
+        <item>milla</item>
+        <item>yarda</item>
+        <item>pie</item>
+        <item>pulgada</item>
+        <item>milla náutica</item>
     </string-array>
 
     /* TIME */
@@ -107,12 +107,12 @@
 
 
     <string-array name="time_spinner">
-        <item>seconde</item>
-        <item>minute</item>
-        <item>heure</item>
-        <item>jour</item>
-        <item>année</item>
-        <item>miliseconde</item>
+        <item>segundo</item>
+        <item>minuto</item>
+        <item>hora</item>
+        <item>día</item>
+        <item>año</item>
+        <item>milisegundo</item>
     </string-array>
 
 
@@ -126,11 +126,11 @@
 
 
     <string-array name="volume_spinner">
-        <item>litre</item>
-        <item>once_liquide_uk</item>
-        <item>once_liquide_usa</item>
-        <item>pinte</item>
-        <item>metre_cube</item>
+        <item>litro</item>
+        <item>onza líquida (uk)</item>
+        <item>onza líquida (usa)</item>
+        <item>pinta</item>
+        <item>metro cúbico</item>
     </string-array>
 
 
@@ -147,12 +147,12 @@
 
 
     <string-array name="mass_spinner">
-        <item>kilogramme</item>
-        <item>tone</item>
-        <item>livre</item>
-        <item>once</item>
-        <item>gramme</item>
-        <item>miligramme</item>
+        <item>kilogramo</item>
+        <item>tonelada</item>
+        <item>libra</item>
+        <item>onza</item>
+        <item>gramo</item>
+        <item>miligramo</item>
     </string-array>
 
 
@@ -182,10 +182,10 @@
 
 
     <string-array name="speed_spinner">
-        <item>kilometre_heur</item>
-        <item>metre_seconde</item>
-        <item>miles_heur</item>
-        <item>noeud</item>
+        <item>kilómetro por hora</item>
+        <item>metro por segundo</item>
+        <item>milla por hora</item>
+        <item>nudo</item>
     </string-array>
 
 </resources>

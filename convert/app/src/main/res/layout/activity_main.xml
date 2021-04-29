@@ -6,11 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <View
+        android:id="@+id/fond_gauche"
+        android:layout_width="213dp"
+        android:layout_height="242dp"
+        android:foreground="@drawable/fond_gauche"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/fond_droite"
+        android:layout_width="196dp"
+        android:layout_height="244dp"
+        android:foreground="@drawable/fond_droite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <LinearLayout
         android:id="@+id/bottom_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/orange_1"
+        android:background="#00FFFFFF"
         android:orientation="horizontal"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,7 +40,8 @@
             android:layout_weight="1"
             android:background="@color/orange_1"
             android:foreground="@drawable/home"
-            android:text="@string/blank" />
+            android:text="@string/blank"
+            app:backgroundTint="@color/orange_3" />
 
         <Button
             android:id="@+id/time_btn"
@@ -97,6 +114,8 @@
         app:layout_constraintBottom_toTopOf="@+id/bottom_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/home_text" />
+        app:layout_constraintTop_toBottomOf="@+id/home_text" >
+
+    </ListView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

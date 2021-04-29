@@ -73,9 +73,9 @@
         <item>joule</item>
         <item>kilojoule</item>
         <item>calorie</item>
-        <item>Kilocalorie</item>
-        <item>watt_heure</item>
-        <item>kilowatt_heure</item>
+        <item>kilocalorie</item>
+        <item>watt-hour</item>
+        <item>>kilowatt-hour</item>
         <item>Tera electronvolt</item>
     </string-array>
 
@@ -88,7 +88,7 @@
     <string name="centimétre">centimeter</string>
     <string name="décimétre">decimeter</string>
     <string name="métre">meter</string>
-    <string name="décamétre">décameter</string>
+    <string name="décamétre">decameter</string>
     <string name="hectométre">hectometer</string>
     <string name="kilométre">kilometer</string>
     <string name="miles">mile</string>
@@ -117,20 +117,20 @@
 
 
     <string-array name="length_spinner">
-        <item>mètre</item>
-        <item>nanomètre</item>
-        <item>micromètre</item>
-        <item>milimètre</item>
-        <item>centimètre</item>
-        <item>décimètre</item>
-        <item>décamètre</item>
-        <item>hectomètre</item>
-        <item>kilomètre</item>
-        <item>miles</item>
+        <item>meter</item>
+        <item>nanometer</item>
+        <item>micrometer</item>
+        <item>millimeter</item>
+        <item>centimeter</item>
+        <item>decimeter</item>
+        <item>decameter</item>
+        <item>hectometer</item>
+        <item>kilometer</item>
+        <item>mile</item>
         <item>yard</item>
-        <item>pied</item>
-        <item>pouce</item>
-        <item>mile_marin</item>
+        <item>feet</item>
+        <item>inch</item>
+        <item>nautical mile</item>
     </string-array>
 
 /* TIME */
@@ -154,12 +154,12 @@
 
 
     <string-array name="time_spinner">
-        <item>seconde</item>
+        <item>second</item>
         <item>minute</item>
-        <item>heure</item>
-        <item>jour</item>
-        <item>année</item>
-        <item>miliseconde</item>
+        <item>hour</item>
+        <item>day</item>
+        <item>year</item>
+        <item>millisecond</item>
     </string-array>
 
     /*VOLUME */
@@ -181,10 +181,10 @@
 
     <string-array name="volume_spinner">
         <item>litre</item>
-        <item>once_liquide_uk</item>
-        <item>once_liquide_usa</item>
-        <item>pinte</item>
-        <item>metre_cube</item>
+        <item>fluid once (uk)</item>
+        <item>fluid once (usa)</item>
+        <item>pint</item>
+        <item>cubic meter</item>
     </string-array>
 
      /* MASS */
@@ -210,11 +210,11 @@
 
     <string-array name="mass_spinner">
         <item>kilogramme</item>
-        <item>tone</item>
-        <item>livre</item>
+        <item>tonne</item>
+        <item>pound</item>
         <item>once</item>
         <item>gramme</item>
-        <item>miligramme</item>
+        <item>milligramme</item>
     </string-array>
 
 
@@ -258,10 +258,10 @@
 
 
     <string-array name="speed_spinner">
-        <item>kilometre_heur</item>
-        <item>metre_seconde</item>
-        <item>miles_heur</item>
-        <item>noeud</item>
+        <item>kilometer per hour</item>
+        <item>meter per second</item>
+        <item>miles per hour</item>
+        <item>knot</item>
     </string-array>
 
 

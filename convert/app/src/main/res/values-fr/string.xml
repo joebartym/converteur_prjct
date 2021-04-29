@@ -28,12 +28,13 @@
     <string name="degree">degré</string>
     <string name="turn">tour</string>
     <string name="gradian">grade</string>
+
     <string-array name="angle_spinner">
-        <item>angular mil</item>
+        <item>mil angulaire</item>
         <item>radian</item>
-        <item>degree</item>
-        <item>turn</item>
-        <item>gradian</item>
+        <item>degré</item>
+        <item>tourn</item>
+        <item>grade</item>
     </string-array>
 
 
@@ -55,16 +56,16 @@
         <item>kilojoule</item>
         <item>calorie</item>
         <item>Kilocalorie</item>
-        <item>watt_heure</item>
-        <item>kilowatt_heure</item>
-        <item>Tera electronvolt</item>
+        <item>watt-heure</item>
+        <item>kilowatt-heure</item>
+        <item>Tera électronvolt</item>
     </string-array>
 
     /* LENGTH*/
 
     <string name="nanométre">nanomètre</string>
     <string name="micrométre">micromètre</string>
-    <string name="millimétre">milimètre</string>
+    <string name="millimétre">millimètre</string>
     <string name="centimétre">centimètre</string>
     <string name="décimétre">décimètre</string>
     <string name="métre">mètre</string>
@@ -82,17 +83,17 @@
         <item>mètre</item>
         <item>nanomètre</item>
         <item>micromètre</item>
-        <item>milimètre</item>
+        <item>millimètre</item>
         <item>centimètre</item>
         <item>décimètre</item>
         <item>décamètre</item>
         <item>hectomètre</item>
         <item>kilomètre</item>
-        <item>miles</item>
+        <item>mile</item>
         <item>yard</item>
         <item>pied</item>
         <item>pouce</item>
-        <item>mile_marin</item>
+        <item>mile marin</item>
     </string-array>
 
 
@@ -127,10 +128,10 @@
 
     <string-array name="volume_spinner">
         <item>litre</item>
-        <item>once_liquide_uk</item>
-        <item>once_liquide_usa</item>
+        <item>once liquide (uk)</item>
+        <item>once liquide (usa)</item>
         <item>pinte</item>
-        <item>metre_cube</item>
+        <item>mètre cube</item>
     </string-array>
 
 
@@ -148,7 +149,7 @@
 
     <string-array name="mass_spinner">
         <item>kilogramme</item>
-        <item>tone</item>
+        <item>tonne</item>
         <item>livre</item>
         <item>once</item>
         <item>gramme</item>
@@ -184,9 +185,9 @@
 
 
     <string-array name="speed_spinner">
-        <item>kilometre_heur</item>
-        <item>metre_seconde</item>
-        <item>miles_heur</item>
+        <item>kilomètre par heure</item>
+        <item>mètre par seconde</item>
+        <item>miles par heure</item>
         <item>noeud</item>
     </string-array>
 
