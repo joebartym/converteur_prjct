@@ -103,16 +103,16 @@
     <string name="jour">jour</string>
     <string name="seconde">seconde</string>
     <string name="annee">année</string>
-    <string name="microseconde">microseconde</string>
+    <string name="miliseconde">miliseconde</string>
 
 
     <string-array name="time_spinner">
+        <item>seconde</item>
         <item>minute</item>
         <item>heure</item>
         <item>jour</item>
-        <item>seconde</item>
         <item>année</item>
-        <item>microseconde</item>
+        <item>miliseconde</item>
     </string-array>
 
 

@@ -141,7 +141,7 @@
     <string name="jour">jour</string>
     <string name="seconde">seconde</string>
     <string name="annee">année</string>
-    <string name="microseconde">microseconde</string>
+    <string name="miliseconde">miliseconde</string>
 
 
     <string name="smb_minute" translatable="false">m</string>
@@ -149,17 +149,17 @@
     <string name="smb_jour" translatable="false">j</string>
     <string name="smb_seconde" translatable="false">s</string>
     <string name="smb_annee" translatable="false"> </string>
-    <string name="smb_microseconde" translatable="false">µs</string>
+    <string name="smb_miliseconde" translatable="false">ms</string>
 
 
 
     <string-array name="time_spinner">
+        <item>seconde</item>
         <item>minute</item>
         <item>heure</item>
         <item>jour</item>
-        <item>seconde</item>
         <item>année</item>
-        <item>microseconde</item>
+        <item>miliseconde</item>
     </string-array>
 
     /*VOLUME */
